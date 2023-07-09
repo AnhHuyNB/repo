@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(45deg, #18C0E4, #E020FD);
+    height: 100vh;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.form {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 550px;
+    margin: 80px auto 0 auto;
+}
+
+.form__heading {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form__group {
+    position: relative;
+}
+
+.form__group:not(:first-child) {
+    margin-top: 25px;
+}
+
+.form__group-label {
+    opacity: 0.8;
+}
+
+.form__group-input {
+    margin-top: 5px;
+    width: 100%;
+    padding: 20px 0;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 20px;
+}
+
+.form__group-input::placeholder {
+    opacity: 0.6;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+select.form__group-input {
+    font-size: 17px;
+    appearance: none;
+}
+
+.icon-select {
+    position: relative;
+    left: 499px;
+    bottom: 34px;
+}
+
+.icon-select>i {
+    position: absolute;
+    opacity: 0.7;
+}
+
+.icon-select>i:first-child {
+    top: -12px;
+}
+
+.icon-select>i:last-child {
+    bottom: -12px;
+}
+
+textarea.form__group-input::placeholder {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+}
+
+.form__group-submit {
+    width: 100%;
+    border-radius: 25px;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, #18C0E4, #E020FD);
+    color: #fff;
+    transition: 0.2s ease-in;
+
+}
+
+.form__group-submit:hover {
+    filter: brightness(120%);
+}
